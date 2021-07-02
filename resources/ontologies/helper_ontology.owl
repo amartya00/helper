@@ -1,0 +1,408 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/adattagupta/ontologies/2021/5/untitled-ontology-16#"
+     xml:base="http://www.semanticweb.org/adattagupta/ontologies/2021/5/untitled-ontology-16"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper">
+        <owl:versionIRI rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper/0.0.1"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#atLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#atLocation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Task"/>
+        <rdfs:range rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#hasAssociatedNote -->
+
+    <owl:ObjectProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#hasAssociatedNote">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Task"/>
+        <rdfs:range rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Note"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#hasBrand -->
+
+    <owl:ObjectProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#hasBrand">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#CarInsuranceBill"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#ElectricSupply"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#GasSupply"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#HomeInsuranceBill"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#MortageBill"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Sewage"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#SubscriptionsBill"/>
+        <rdfs:range rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Brands"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#withPerson -->
+
+    <owl:ObjectProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#withPerson">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Task"/>
+        <rdfs:range rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#address -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#address">
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#currency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#currency">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Person"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Task"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#dueDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#dueDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Task"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#email -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#email">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#endTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#endTime">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Task"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#expenseValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#expenseValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#fullName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#fullName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#latLon -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#latLon">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#phoneNumber -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#phoneNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#startDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Task"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#Brands -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Brands"/>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#CarInsuranceBill -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#CarInsuranceBill">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#InsuranceBill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#ElectricSupply -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#ElectricSupply">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#UtilitiesBill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#GasBill -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#GasBill">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#GasSupply -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#GasSupply">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#UtilitiesBill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#GroceryBill -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#GroceryBill">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#HomeInsuranceBill -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#HomeInsuranceBill">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#InsuranceBill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#HomeLocation -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#HomeLocation">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#InsuranceBill -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#InsuranceBill">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#InternetBill -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#InternetBill">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#Market -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Market">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#MiscExpense -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#MiscExpense">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#MortageBill -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#MortageBill">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#Note -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Note"/>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#Person -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Person"/>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place"/>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#Restaurant -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Restaurant">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#Sewage -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Sewage">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#UtilitiesBill"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#Shopping -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Shopping">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#SubscriptionsBill -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#SubscriptionsBill">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#Task -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Task"/>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#UtilitiesBill -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#UtilitiesBill">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Expense"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.sigabrt.io/helper/ontologies/2021/6/helper#WorkLocation -->
+
+    <owl:Class rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#WorkLocation">
+        <rdfs:subClassOf rdf:resource="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Note"/>
+            <rdf:Description rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Person"/>
+            <rdf:Description rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Place"/>
+            <rdf:Description rdf:about="http://www.sigabrt.io/helper/ontologies/2021/6/helper#Task"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
